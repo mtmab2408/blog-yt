@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "The Evolution of Metal Music",
+    "tag": "Metalcore",
+    "excerpt": "Exploring how metal music transformed over the decades...",
+    "image": "/b1.webp"
+  },
+  {
+    "id": 2,
+    "title": "Rock Legends You Must Know",
+    "tag": "Rock/Heavy Rock",
+    "excerpt": "These are the artists that helped shape the sound of modern rock...",
+    "image": "/kiss.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Alternative Metal : Starter Pack",
+    "tag": "Alternative Metal",
+    "excerpt": "Introduction to the world of alternative metal and how it all...",
+    "image": "/tool.jpg"
+  }
+]
