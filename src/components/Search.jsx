@@ -40,7 +40,7 @@ function Search({ onTagChange }) {
             className={`
               ${index === activeIndex ? 'bg-black text-white' : ''} 
               p-1 pb-2 rounded-sm md:rounded-full cursor-pointer md:px-4
-              hover:scale-110 hover:border-[1px] border-black
+              hover:scale-110 hover:border, border-black
               transition-all duration-100 ease-in-out
             `}
           >
