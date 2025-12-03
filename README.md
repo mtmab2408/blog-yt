@@ -1,4 +1,3 @@
-
 # **Technological Foundations of Software Development — Assignment #4**
 
 ### **Author:** Muhammad Talha
@@ -8,13 +7,13 @@
 This project is a simple blog website built using **React** and **Vite**.
 It demonstrates modern build tool usage, including:
 
-* Dependency management
-* Compilation
-* Version management
-* Packaging (build output)
-* Script-based automation
-* Reproducible builds
-* Build tool–specific configuration files and metadata
+- Dependency management
+- Compilation
+- Version management
+- Packaging (build output)
+- Script-based automation
+- Reproducible builds
+- Build tool–specific configuration files and metadata
 
 This README documents how to build, run, and understand this project.
 
@@ -30,12 +29,12 @@ The project uses **Vite** as the build tool.
 
 `npm` + `package.json` track all external libraries:
 
-* react
-* react-dom
-* react-router-dom
-* tailwindcss
-* @tailwindcss/vite
-* react-icons
+- react
+- react-dom
+- react-router-dom
+- tailwindcss
+- @tailwindcss/vite
+- react-icons
 
 Install all dependencies using:
 
@@ -55,9 +54,9 @@ npm run dev
 
 Vite compiles:
 
-* JSX → JavaScript
-* Tailwind classes → optimized CSS
-* All modules → transformed ES modules
+- JSX → JavaScript
+- Tailwind classes → optimized CSS
+- All modules → transformed ES modules
 
 ---
 
@@ -65,9 +64,9 @@ Vite compiles:
 
 Versioning is handled through:
 
-* `"version"` field in `package.json`
-* Semantic Versioning (SemVer)
-* `package-lock.json` to ensure deterministic installation
+- `"version"` field in `package.json`
+- Semantic Versioning (SemVer)
+- `package-lock.json` to ensure deterministic installation
 
 Example from this project:
 
@@ -123,9 +122,9 @@ npm run preview
 
 This ensures:
 
-* All dependencies install identically
-* Builds are reproducible thanks to `package-lock.json`
-* No global configuration required
+- All dependencies install identically
+- Builds are reproducible thanks to `package-lock.json`
+- No global configuration required
 
 ---
 
@@ -158,22 +157,22 @@ public/
 ## **Vite Configuration — `vite.config.js`**
 
 ```js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-})
+});
 ```
 
 **This configuration demonstrates:**
 
-* Tailwind plugin integration
-* React JSX transform plugin
-* Build metadata
-* Automated asset and module handling
+- Tailwind plugin integration
+- React JSX transform plugin
+- Build metadata
+- Automated asset and module handling
 
 ---
 
@@ -215,10 +214,10 @@ export default defineConfig({
 
 **This file includes:**
 
-* Project metadata (name, version)
-* Scripts for automation
-* Dependency definitions
-* Locked versions for deterministic builds
+- Project metadata (name, version)
+- Scripts for automation
+- Dependency definitions
+- Locked versions for deterministic builds
 
 ---
 
@@ -226,24 +225,22 @@ export default defineConfig({
 
 This project demonstrates a clean, modern build system using Vite and React, fulfilling:
 
-* Build automation
-* Compilation pipeline
-* Dependency & version management
-* Packaging workflow
-* Reproducible builds
-* Proper documentation
+- Build automation
+- Compilation pipeline
+- Dependency & version management
+- Packaging workflow
+- Reproducible builds
+- Proper documentation
 
 Although this submission demonstrates the foundational architecture and build-tool usage, it currently represents a **bare scaffolding of a larger project**.
 
 I plan to expand it into a complete, production-quality blog platform with:
 
-* a real backend
-* user authentication
-* markdown support
-* blog editor
-* dynamic content
-* improved UI/UX
+- a real backend
+- user authentication
+- markdown support
+- blog editor
+- dynamic content
+- improved UI/UX
 
 This submission serves as the **initial technical foundation**, and future versions (updated with each TFSD assignment) will evolve into a full working application.
-
-
