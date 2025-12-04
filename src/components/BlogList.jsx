@@ -1,18 +1,45 @@
 import { useEffect, useState } from 'react';
+import logger from '../logger';
 
 function BlogList({ selectedTag }) {
   const [blogs, setBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    logger.info('BlogList mounted — starting blog fetch');
+
     fetch('/src/data/blogs.json')
-      .then((res) => res.json())
-      .then((data) => setBlogs(data));
+      .then((res) => {
+        logger.debug('Fetch response received', res);
+
+        if (!res.ok) {
+          logger.warn(`Fetch returned non-OK status: ${res.status}`);
+        }
+
+        return res.json();
+      })
+      .then((data) => {
+        logger.info(`Loaded ${data.length} blogs`);
+        setBlogs(data);
+      })
+      .catch((err) => {
+        logger.error('Failed to fetch blogs', err);
+      })
+      .finally(() => {
+        setLoading(false);
+        logger.debug('Blog fetch effect completed');
+      });
   }, []);
 
-  // Apply filtering
+  if (loading) {
+    logger.debug('BlogList rendering in loading state');
+    return <p>Loading blogs...</p>;
+  }
+
   const filteredBlogs =
     selectedTag === 'All' ? blogs : blogs.filter((blog) => blog.tag === selectedTag);
 
+  logger.info(`Rendering BlogList with tag "${selectedTag}" — ${filteredBlogs.length} items`);
   return (
     <div className="grid md:grid-cols-3 gap-6 mt-10 px-10">
       {filteredBlogs.map((blog) => (
