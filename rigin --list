@@ -1,0 +1,15 @@
+file:/home/mtm/.gitconfig	user.email=mtmab2408@gmail.com
+file:/home/mtm/.gitconfig	user.name=Muhammad TALHA
+file:/home/mtm/.gitconfig	user.signingkey=/home/mtm/.ssh/id_ed25519.pub
+file:/home/mtm/.gitconfig	commit.gpgsign=true
+file:/home/mtm/.gitconfig	gpg.format=ssh
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.hookspath=.husky/_
+file:.git/config	remote.origin.url=https://github.com/mtmab2408/blog-yt.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	branch.main.vscode-merge-base=origin/main
