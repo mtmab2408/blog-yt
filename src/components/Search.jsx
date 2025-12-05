@@ -9,6 +9,14 @@ const tags = [
   { id: 4, name: 'Alternative Metal' },
 ];
 
+/**
+ * Search component that includes a search input and a tag selector.
+ *
+ * @component
+ * @param {Object} props
+ * @param {(tag: string) => void} props.onTagChange - Callback when a tag is selected.
+ */
+
 function Search({ onTagChange }) {
   const [activeIndex, setActiveIndex] = useState(0);
 

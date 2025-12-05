@@ -1,6 +1,14 @@
 import { useEffect, useState } from 'react';
 import logger from '../logger';
 
+/**
+ * Renders a list of blog posts with optional tag filtering.
+ *
+ * @component
+ * @param {Object} props
+ * @param {string} props.selectedTag - The currently selected tag used for filtering.
+ */
+
 function BlogList({ selectedTag }) {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);

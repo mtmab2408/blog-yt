@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "preview": "vite preview",
+    "docs": "jsdoc -c jsdoc.config.json",
     "prepare": "husky",
     "test": "vitest"
   },
@@ -36,6 +37,7 @@
     "eslint-plugin-vitest": "^0.5.4",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
+    "jsdoc": "^4.0.5",
     "jsdom": "^27.2.0",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",

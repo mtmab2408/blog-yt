@@ -1,3 +1,10 @@
+/**
+ * Simple console-based logging utility.
+ * Provides info, warn, error, and debug log levels.
+ *
+ * @module logger
+ */
+
 const logger = {
   info: (message, data = null) => {
     console.info(`INFO: ${message}`, data);
