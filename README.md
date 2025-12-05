@@ -19,6 +19,20 @@ This README documents how to build, run, and understand this project.
 
 ---
 
+---
+
+## **Features(Currently)**
+
+- Browse blogs by categories (Rock, Metalcore, Alternative Metal, etc.)
+- Search bar UI (frontend only)
+- Tag-based filtering system
+- Components built with React + Vite
+- TailwindCSS styling
+- Logging utility system
+- Basic unit tests using Vitest + React Testing Library
+
+---
+
 ## **Build Tool Overview (Vite)**
 
 ---
@@ -244,3 +258,7 @@ I plan to expand it into a complete, production-quality blog platform with:
 - improved UI/UX
 
 This submission serves as the **initial technical foundation**, and future versions (updated with each TFSD assignment) will evolve into a full working application.
+
+## **License**
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
