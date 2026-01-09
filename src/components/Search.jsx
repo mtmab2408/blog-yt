@@ -14,7 +14,7 @@ const tags = [
  *
  * @component
  * @param {Object} props
- * @param {(tag: string) => void} props.onTagChange - Callback when a tag is selected.
+ * @param {function(string): void} props.onTagChange - Callback when a tag is selected.
  */
 
 function Search({ onTagChange }) {
